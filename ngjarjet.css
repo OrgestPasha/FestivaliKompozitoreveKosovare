@@ -1,0 +1,728 @@
+/*Qitu ja nis kodi qe duhet me copy paste n qdo page*/
+
+:root {
+  --colorbackground: #fffbf1;
+  --colorgray: #c4c6bb;
+  --colororange: #ffb800;
+  --colorblack: #0d0d0d;
+  --colorgreen: #595f39;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #fffbf1;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  display: inline;
+}
+.hover {
+  position: relative;
+  z-index: 2;
+}
+.hover:hover {
+  cursor: pointer;
+  bottom: 2px;
+}
+footer a:hover {
+  color: var(--colororange);
+}
+
+a:hover {
+  position: relative;
+  bottom: 2px;
+}
+
+button:hover {
+  position: relative;
+  bottom: 3px;
+  cursor: pointer;
+}
+
+.kliko-per-me-shume a:hover {
+  box-shadow: -5px 5px 5px 1px #0d0d0d78;
+}
+
+#header-opacity {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 30%,
+    var(--colorblack) 50% 100%
+  );
+  opacity: 0.7;
+  width: 100%;
+  height: 583px;
+  position: absolute;
+}
+
+#nav-bar-head {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+  border-radius: 6px;
+  margin: 40px;
+  width: 90%;
+  height: 83px;
+  margin-left: 5%;
+  display: flex;
+}
+
+#phone-dropdown {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.text-header img {
+  scale: 0.23;
+  position: absolute;
+}
+
+#titulli-head1 {
+  top: -20px;
+  left: -480px;
+}
+
+#titulli-head2 {
+  top: 10px;
+  left: -305px;
+}
+
+#logo-header {
+  width: 95px;
+  height: 80px;
+  margin-left: 20px;
+  margin-top: 0px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#nav-section {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 130px;
+  color: var(--colorbackground);
+}
+
+#nav-section ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 50px;
+}
+
+#nav-section ul li {
+  font-size: 18px;
+  margin: 20px;
+  font-weight: 250;
+  letter-spacing: 0.5px;
+}
+
+#dropdown {
+  position: absolute;
+  display: none;
+}
+
+a {
+  color: var(--colorbackground);
+  text-decoration: none;
+}
+
+/* qitu ja nis footerii*/
+footer {
+  background: var(--colorblack);
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  top: 2100px;
+  color: var(--colorbackground);
+  display: flex;
+}
+
+footer > #footer-1 {
+  width: 60%;
+  height: 100%;
+
+  padding: 70px;
+}
+
+footer > #footer-1 > h1 {
+  margin-bottom: 40px;
+  border-right: 1px solid var(--colorbackground);
+  padding: 10px;
+  padding-left: 0px;
+}
+
+footer > #footer-1 > a {
+  font-size: 20px;
+  font-weight: 100;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer > #footer-1 > a > i {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+footer > #footer-1 > p {
+  font-weight: 100;
+  margin-right: 20px;
+  margin-top: 70px;
+}
+
+footer > #footer-2 {
+  width: 50%;
+  padding: 70px;
+  height: 100%;
+}
+
+footer > #footer-2 > h1 {
+  margin-bottom: 40px;
+  padding: 10px;
+  padding-left: 0px;
+}
+
+footer > #footer-2 > a {
+  font-size: 20px;
+  font-weight: 100;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer > #footer-2 > a > i {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+footer > #footer-2 > p {
+  font-weight: 100;
+  margin-right: 20px;
+  margin-top: 70px;
+}
+
+/*Qitu maron kodi qe duhet me copy paste n qdo page*/
+
+#opacity-top {
+  width: 100%;
+  height: 350px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--colorblack) 30%,
+    transparent 100%
+  );
+  opacity: 0.7;
+  position: absolute;
+  top: -50px;
+  z-index: -1;
+}
+
+#div-body1 {
+  display: flex;
+  justify-content: center;
+}
+
+.main-2-head {
+  position: relative;
+  margin-left: 20px;
+}
+
+#div-body1 > #body1-header h1 {
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+  border-bottom: 3px solid var(--colororange);
+  position: absolute;
+  left: 43.5%;
+  top: 220px;
+  font-size: 28px;
+  letter-spacing: -1px;
+}
+
+.body1-content {
+  display: flex;
+  margin-top: 150px;
+  gap: 100px;
+}
+
+.body1-content > .body1-content-left > .background-content {
+  width: 525px;
+  height: 376px;
+  display: flex;
+  align-items: end;
+}
+
+.body1-content-right {
+  width: 526px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.body1-content-right > h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.body1-content-right > p {
+  font-size: 20px;
+}
+
+#main-2 > #second-1-text {
+  background: url(images/main2.jpg);
+  background-size: cover;
+}
+
+#main-2 h1 {
+  position: relative;
+  left: 25px;
+}
+
+#main-2 > #second-1-text > h1 {
+  position: relative;
+  left: -2px;
+  width: 100%;
+}
+
+.shadow-second {
+  width: 560px;
+  height: 340px;
+  position: absolute;
+
+  background: var(--colorblack);
+  opacity: 0.8;
+  position: absolute;
+  z-index: -1;
+}
+
+#second-1-text h1 {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+  top: 50px;
+  transition: top 0.8s ease;
+}
+
+#second-1-text p {
+  width: 80%;
+  margin: auto;
+  margin-top: 120px;
+  font-size: 14px;
+}
+
+#second-1-text:hover {
+  opacity: 1;
+  transition: 0.7s ease;
+}
+
+#body2-header > h1 {
+  padding: 5px;
+  width: 220px;
+  text-align: center;
+  margin: auto;
+  font-size: 28px;
+  letter-spacing: -1px;
+  margin-top: 150px;
+}
+
+#body3 {
+  margin-top: 50px;
+  z-index: -1;
+  width: 100%;
+  height: 431px;
+  background: url(images/background2.jpg);
+  background-size: cover;
+  background-position: 50% 80%;
+}
+
+#shadowbody3 {
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    black 0% 15%,
+    transparent 90% 100%
+  );
+  opacity: 1;
+  width: 100%;
+  height: 431px;
+  z-index: 0;
+}
+
+#body3-text {
+  position: relative;
+  top: 100px;
+  margin: 50px;
+  width: 50%;
+  color: white;
+}
+
+#body3-text-p {
+  margin: 30px;
+  position: relative;
+  z-index: 1;
+  font-size: 23px;
+  font-weight: 200;
+}
+
+#last {
+  margin-left: 30px;
+  position: relative;
+  margin-top: 5px;
+  z-index: 1;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+#body4 {
+  margin-top: 150px;
+}
+
+#body4-main {
+  margin-top: -200px;
+  display: flex;
+  height: 800px;
+  overflow: hidden;
+}
+
+#body4-header {
+  left: 32.5%;
+}
+
+#body4-header h1 {
+  padding: 5px;
+  width: 520px;
+  text-align: center;
+  margin: auto;
+  font-size: 28px;
+  letter-spacing: -1px;
+}
+
+#line {
+  margin-top: 5px;
+  border-bottom: 3px solid var(--colororange);
+  width: 175px;
+  margin: auto;
+}
+
+#line1 {
+  margin-top: 5px;
+  border-bottom: 3px solid var(--colororange);
+  width: 175px;
+  margin: auto;
+}
+
+#body4-main img {
+  width: 100%;
+  height: 500px;
+  margin-top: 200px;
+  object-fit: contain;
+}
+
+/*qitu ja nis responsive css*/
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #nav-bar-head {
+    opacity: 0.8;
+    width: 100%;
+    margin-left: 0;
+    height: 110px;
+    position: fixed;
+    z-index: 3;
+    top: -40px;
+  }
+  #logo-header {
+    width: 80px;
+    height: auto;
+    margin-left: 5px;
+    position: absolute;
+    top: 10px;
+    left: 160px;
+  }
+
+  .text-header img {
+    scale: 0.15;
+    position: absolute;
+  }
+
+  #titulli-head1 {
+    top: 25px;
+    left: -580px;
+  }
+
+  #titulli-head2 {
+    top: 50px;
+    left: -355px;
+  }
+
+  .nav-item {
+    display: none;
+    font-size: 10px;
+    margin-right: -30px;
+    position: relative;
+    left: -30px;
+    top: 40px;
+    z-index: 2;
+  }
+
+  #phone-dropdown {
+    position: absolute;
+    width: 100px;
+    height: 105px;
+    top: 120px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    border-radius: 6px;
+  }
+
+  #dropdown-btn {
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+    border: none;
+    font-size: 25px;
+    position: absolute;
+    display: block;
+    top: -10px;
+    left: 10px;
+  }
+
+  #phone-dropdown ul {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 5px;
+  }
+
+  .drop-item {
+    font-size: 10px;
+    font-weight: 200;
+    margin-bottom: 5px;
+  }
+  #lang-btn > .nav-item {
+    display: block;
+  }
+
+  #lang-btn {
+    display: block;
+  }
+
+  #dropdown {
+    position: absolute;
+    display: block;
+    left: -135px;
+    top: 60px;
+  }
+
+  #albania {
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    font-size: 12px;
+  }
+
+  #english {
+    position: absolute;
+    top: 80px;
+    left: 230px;
+    font-size: 12px;
+  }
+
+  .nav-right a {
+    left: -50px;
+  }
+
+  footer {
+    height: 150px;
+    top: 1850px;
+    overflow: hidden;
+    display: flex;
+  }
+
+  footer h1 {
+    font-size: 9px;
+    width: 100%;
+    position: relative;
+    top: -40px;
+    left: 30px;
+  }
+
+  footer > #footer-1 > h1 {
+    width: 185px;
+  }
+
+  footer > #footer-2 > h1 {
+    position: relative;
+    left: 10px;
+  }
+
+  #icon1 {
+    position: relative;
+    left: 60px;
+    top: -70px;
+  }
+
+  #icon2 {
+    position: relative;
+    top: -115px;
+    left: 110px;
+  }
+
+  #icon3 {
+    position: relative;
+    left: 20px;
+    top: -70px;
+  }
+
+  #icon4 {
+    position: relative;
+    top: -115px;
+    left: 80px;
+  }
+
+  footer > #footer-2 > h1 {
+    width: 200px;
+  }
+
+  #copy {
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+    left: 50%;
+    top: -170px;
+    width: 300px;
+  }
+
+  #footer-1 {
+    position: relative;
+    left: -75px;
+    top: -10px;
+    width: 200px;
+  }
+
+  #footer-2 {
+    position: absolute;
+    width: 250px;
+    top: -10px;
+    right: 30px;
+  }
+
+  footer > #footer-1 a {
+    font-size: 14px;
+  }
+
+  footer > #footer-2 a {
+    font-size: 14px;
+  }
+  /*qitu maron css responsive per nav qdo faqe*/
+
+  #div-body1 > #body1-header h1 {
+    top: 150px;
+    left: 27%;
+  }
+
+  .body1-content {
+    margin-top: 100px;
+    flex-direction: column;
+    scale: 0.6;
+  }
+
+  #body2-header {
+    position: relative;
+    top: -200px;
+  }
+
+  #body3-text {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    right: 50px;
+  }
+
+  #body3-text p {
+    font-size: 20px;
+  }
+
+  #body3 {
+    margin-top: -150px;
+    overflow-x: hidden;
+    z-index: -1;
+    width: 100%;
+    height: 450px;
+    background: url(images/background2.jpg);
+    background-size: cover;
+    background-position: 100% 80%;
+  }
+
+  #shadowbody3 {
+    height: 450px;
+  }
+
+  #body4 {
+    height: 300px;
+  }
+  #body4-header h1 {
+    position: relative;
+    top: -50px;
+    width: 350px;
+  }
+
+  #body4-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #body4-main {
+    height: 500px;
+  }
+  #body4-main img {
+    height: 300px;
+    transform: translateY(-100px);
+  }
+
+  #line1 {
+    position: relative;
+    right: 0px;
+    top: -50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Kontakti</title>
+    <link rel="stylesheet" href="kontakti.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/llogo-kompozitor.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/08ef5f69d6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <div id="nav-bar-head">
+      <!--div qe ndan nav barin ne dy sektore ky o sektori 1-->
+      <a href="kryefaqja.html">
+        <div id="logo-section" class="hover">
+          <div id="img-header-section">
+            <img src="images/llogo-kompozitor.png" alt="" id="logo-header" />
+          </div>
+  
+          <div id="text-header-section">
+            <div id="text1-header" class="text-header">
+              <img src="images/titulli1.png" alt="" id="titulli-head1" />
+            </div>
+            <div id="text2-header" class="text-header">
+              <img src="images/titulli2.png" alt="" id="titulli-head2" />
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!--Sektori i dyt i nav barit-->
+      <div id="nav-section">
+        <ul>
+          <li><a href="kryefaqja.html" class="nav-item">Kryefaqja</a></li>
+          <li>
+            <a href="rreth_nesh.html" class="nav-item" id="rreth">Rreth Nesh</a>
+          </li>
+          <li class="nav-right">
+            <a href="ngjarjet.html" class="nav-item">Ngjarjet</a>
+          </li>
+          <li class="nav-right">
+            <a href="kompozitoret.html" class="nav-item">Kompozitorët</a>
+          </li>
+          <li class="nav-right">
+            <a href="kontakti.html" class="nav-item">Kontakti</a>
+          </li>
+          <li class="nav-right" id="lang-btn">
+            <a href="kontakti.html" class="nav-item" id="albania">AL |</a>
+            <a href="kontakti-eng.html" class="nav-item" id="english">EN</a>
+          </li>
+          <li class="nav-right" id="dropdown">
+            <button id="dropdown-btn" onclick="toggle()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div id="phone-dropdown" class="hidden">
+        <ul>
+          <li><a href="kryefaqja.html" class="drop-item">Kryefaqja</a></li>
+          <li>
+            <a href="rreth_nesh.html" class="drop-item" id="rreth"
+              >Rreth Nesh</a
+            >
+          </li>
+          <li class="">
+            <a href="ngjarjet.html" class="drop-item">Ngjarjet</a>
+          </li>
+          <li class="">
+            <a href="kompozitoret.html" class="drop-item">Kompozitoret</a>
+          </li>
+          <li class="">
+            <a href="kontakti.html" class="drop-item">Kontakti</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-------------------------------------qitu marojm me copy  headerin----------------------------------------->
+    <div id="opacity-top">
+      <a href=""></a>
+    </div>
+    <div class="krejt-kontakti">
+      <div class="background-layer"></div>
+      <div class="contact-container">
+        <h2 id="na-kontaktoni">Na Kontaktoni</h2>
+        <div class="hr-line">
+          <hr />
+        </div>
+        <div class="text-container">
+          <h3>Informohuni rreth “Festivalit i Kompozitorëve Kosovarë”.</h3>
+          <p>
+            Mos hezitoni të na kontaktoni për çdo pyetje ose kërkesë të juajën
+            rreth festivalit. Andaj, për të pranuar përgjigje të sakta dhe të
+            detajuara rreth pyetjeve ose kërkesave tuaja, ju lutem plotësoni
+            formularin e mëposhtëm:
+          </p>
+        </div>
+
+        <div class="form-container">
+          <form>
+            <input
+              type="text"
+              class="item"
+              name="EmriMbiemri"
+              placeholder="Emri dhe Mbiemri"
+              id="EmriMbiemri"
+              autocomplete="off"
+            />
+            <span class="error-text">Ju lutem plotësoni emrin!</span>
+            <!-- Add this line -->
+            <hr />
+            <input
+              type="email"
+              class="item"
+              name="email"
+              placeholder="E-mail"
+              id="email"
+              autocomplete="off"
+            />
+            <span class="error-text-email">Ju lutem plotësoni E-mail!</span>
+            <!-- Add this line -->
+            <hr />
+            <input
+              type="number"
+              class="item"
+              name="number"
+              placeholder="Nr. i telefonit"
+              id="number"
+              autocomplete="off"
+              min="8"
+            />
+            <span class="error-text-number"
+              >Ju lutem plotësoni numrin e telefonit!</span
+            >
+            <!-- Add this line -->
+            <hr />
+            <input
+              type="text"
+              class="item"
+              name="pytja"
+              placeholder="Lloji pyetjes apo i kërkeses"
+              id="pytja"
+              autocomplete="off"
+            />
+            <span class="error-text-pytja">Ju lutem plotësoni formën!</span>
+            <hr />
+            <textarea
+              id="message"
+              class="item"
+              rows="9"
+              placeholder="Shkruani Mesazhin"
+              id="message"
+              autocomplete="off"
+            ></textarea>
+            <span class="error-text-message">Ju lutem plotësoni formën!</span>
+            <button type="submit" id="submit">
+              <div class="kliko-per-me-shume">
+                <span
+                  >Dergo Mesazhin <i class="fa-solid fa-chevron-right"></i
+                ></span>
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="second-container">
+        <div class="black-name">
+          <p>Ju inkujarojmë të</p>
+        </div>
+        <div class="yellow-name">
+          <p>na kontaktoni!</p>
+        </div>
+        <div class="mail-p">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M26.25 6H3.75C3.25272 6 2.77581 6.19754 2.42417 6.54917C2.07254 6.90081 1.875 7.37772 1.875 7.875V22.875C1.875 23.3723 2.07254 23.8492 2.42417 24.2008C2.77581 24.5525 3.25272 24.75 3.75 24.75H26.25C26.7473 24.75 27.2242 24.5525 27.5758 24.2008C27.9275 23.8492 28.125 23.3723 28.125 22.875V7.875C28.125 7.37772 27.9275 6.90081 27.5758 6.54917C27.2242 6.19754 26.7473 6 26.25 6ZM24.1875 7.875L15 14.2312L5.8125 7.875H24.1875ZM3.75 22.875V8.72812L14.4656 16.1437C14.6226 16.2526 14.809 16.311 15 16.311C15.191 16.311 15.3774 16.2526 15.5344 16.1437L26.25 8.72812V22.875H3.75Z"
+              fill="black"
+            />
+          </svg>
+          <p>kosovocomposersfest@gmail.com</p>
+        </div>
+
+        <div class="icons">
+          <a
+            href="https://www.facebook.com/kosovocomposersfest?mibextid=LQQJ4d"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/kosovocomposersfestival?igsh=M2o5ZmIweHF5cDh1&utm_source=qr"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://youtube.com/@KosovoComposersFestival?si=2MIXbKoRG5phaXxl"
+            target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="footer-1">
+        <h1>Festivali i Kompozitorëve Kosovarë</h1>
+        <a
+          href="https://www.facebook.com/kosovocomposersfest?mibextid=LQQJ4d"
+          target="_blank"
+          id="icon1"
+          ><i class="fa-brands fa-facebook"></i>
+          <span id="icon-foot1">@kosovocomposersfestival</span></a
+        >
+        <a
+          href="https://www.instagram.com/kosovocomposersfestival?igsh=M2o5ZmIweHF5cDh1&utm_source=qr"
+          target="_blank"
+          style="z-index: 2"
+          id="icon2"
+          ><i class="fa-brands fa-instagram"></i
+          ><span id="icon-foot2">@kosovocomposersfestival</span></a
+        >
+
+        <p id="copy">
+          ©2024 Copyrights Festivali i Kompozitorëve Kosovarë All Rights
+          Reserved.
+        </p>
+      </div>
+
+      <div id="footer-2">
+        <h1>Kosovo Composers Festival</h1>
+        <a
+          href="https://youtube.com/@KosovoComposersFestival?si=2MIXbKoRG5phaXxl"
+          target="_blank"
+          id="icon3"
+          ><i class="fa-brands fa-youtube"></i
+          ><span id="icon-foot3">@kosovocomposersfestival</span></a
+        >
+        <a href="kontakti.html" target="_blank" id="icon4"
+          ><i class="fa-regular fa-envelope"></i
+          ><span id="icon-foot4">kosovocomposersfest@gmail.com</span></a
+        >
+      </div>
+    </footer>
+
+    <!------------------------------------------Qitu maron footeri------------------------------------------>
+    <script src="kontakti.js"></script>
+  </body>
+</html>

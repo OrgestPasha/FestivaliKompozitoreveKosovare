@@ -1,0 +1,1027 @@
+:root {
+  --colorbackground: #fffbf1;
+  --colorgray: #c4c6bb;
+  --colororange: #ffb800;
+  --colorblack: #0d0d0d;
+  --colorgreen: #595f39;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  margin: 0;
+  background-color: #fffbf1;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  display: inline;
+}
+
+.hover {
+  position: relative;
+  z-index: 2;
+}
+.hover:hover {
+  cursor: pointer;
+  bottom: 2px;
+}
+
+a:hover {
+  position: relative;
+  bottom: 5px;
+}
+
+button:hover {
+  position: relative;
+  bottom: 3px;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: var(--colororange);
+}
+
+#header {
+  background-image: url(images/background1.jpg);
+  width: 100%;
+  height: 583px;
+  background-position: center top;
+  top: 0;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  display: inline;
+  position: absolute;
+  justify-content: center;
+}
+
+#header-opacity {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 30%,
+    var(--colorblack) 50% 100%
+  );
+  opacity: 0.7;
+  width: 100%;
+  height: 583px;
+  position: absolute;
+}
+
+:root {
+  --colorbackground: #fffbf1;
+  --colorgray: #c4c6bb;
+  --colororange: #ffb800;
+  --colorblack: #0d0d0d;
+  --colorgreen: #595f39;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #fffbf1;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  display: inline;
+}
+
+footer a:hover {
+  color: var(--colororange);
+}
+
+a:hover {
+  position: relative;
+  bottom: 2px;
+}
+
+button:hover {
+  position: relative;
+  bottom: 3px;
+  cursor: pointer;
+}
+
+.kliko-per-me-shume a:hover {
+  box-shadow: -5px 5px 5px 1px #0d0d0d78;
+}
+
+#nav-bar-head {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+  border-radius: 6px;
+  margin: 40px;
+  width: 90%;
+  height: 83px;
+  margin-left: 5%;
+  display: flex;
+  position: fixed;
+  z-index: 3;
+}
+
+#phone-dropdown {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.text-header img {
+  scale: 0.23;
+  position: absolute;
+}
+
+#titulli-head1 {
+  top: -20px;
+  left: -480px;
+}
+
+#titulli-head2 {
+  top: 10px;
+  left: -305px;
+}
+
+#logo-header {
+  width: 95px;
+  height: 80px;
+  margin-left: 20px;
+  margin-top: 0px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#nav-section {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 130px;
+  color: var(--colorbackground);
+}
+
+#nav-section ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 50px;
+}
+
+#nav-section ul li {
+  font-size: 18px;
+  margin: 20px;
+  font-weight: 250;
+  letter-spacing: 0.5px;
+}
+
+#dropdown {
+  position: absolute;
+  display: none;
+}
+
+a {
+  color: var(--colorbackground);
+  text-decoration: none;
+}
+
+#header-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--colorbackground);
+  z-index: 1;
+}
+
+#header-main > #header-text {
+  width: 100%;
+  margin-top: 250px;
+  text-align: center;
+  z-index: 2;
+  font-size: 30px;
+}
+
+#header-main > #header-text h2 {
+  margin-top: 30px;
+}
+#header-main > #header-text h3 {
+  margin-top: 30px;
+}
+
+.kliko-per-me-shume {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-top: 50px;
+  letter-spacing: 1px;
+}
+
+.kliko-per-me-shume a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--colorblack);
+  color: white;
+  width: 215px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 10px;
+  font-weight: 250;
+  text-align: center;
+}
+
+.kliko-per-me-shume i {
+  margin-left: 10px;
+  font-size: 20px;
+  color: var(--colorbackground);
+}
+
+.kliko2 {
+  position: relative;
+  right: 39%;
+  margin-top: 20px;
+}
+
+#body-div1 {
+  position: relative;
+  top: 700px;
+  width: 100%;
+  height: 200px;
+  background: url(images/body1.png);
+  background-position: 40% 0%;
+  position: relative;
+  justify-content: center;
+}
+
+#opacity-body-div1 {
+  background-image: linear-gradient(
+    to bottom,
+    var(--colorblack) 0%,
+    transparent 50% 100%
+  );
+  opacity: 0.4;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 483px;
+}
+
+#text-div-body1 {
+  color: black;
+  margin: auto;
+  width: 65%;
+}
+
+#text-div-body1 h3 {
+  position: relative;
+  bottom: 40px;
+}
+
+#text-div-body1 p {
+  font-size: 17px;
+  letter-spacing: 0.2px;
+  text-align: justify;
+}
+
+#body-div2 {
+  position: relative;
+  top: 1000px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 1032px;
+  height: 320px;
+  border: 1.5px solid var(--colorgray);
+  border-radius: 8px;
+  display: flex;
+  position: absolute;
+  transform: opacity(1);
+  transition: 0.8s ease;
+  background-color: var(--colorbackground);
+  box-shadow: 5px 0px 30px rgba(64, 64, 64, 0.7);
+}
+
+#glow {
+  width: 802px;
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  border-radius: 50%;
+  height: 200px;
+  z-index: -2;
+  box-shadow: 20px -100px 200px rgba(255, 166, 0.2, 0.9),
+    /* Top shadow, light */ 20px 100px 300px rgba(255, 166, 0, 0.76),
+    20px 70px 300px rgba(255, 165, 0, 0.2);
+}
+
+.prev-card {
+  position: absolute;
+  transform: scale(0.7) translate(400px, 0px);
+  z-index: -1;
+  transition: transform 0.8s ease;
+}
+
+.next-card {
+  position: absolute;
+  transform: scale(0.7) translate(-400px, 0px);
+  z-index: -1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.next-card button {
+  position: relative;
+  right: 150px;
+  top: 20px;
+}
+
+.pfp-div {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.pfp-pic {
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-position: 100% 0%;
+}
+
+.card-text-div {
+  width: 70%;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  position: relative;
+  top: 20%;
+  right: 20px;
+}
+
+.paragraph-div {
+  height: 70%;
+}
+
+.bottom-card-div {
+  display: flex;
+  position: relative;
+  top: -30px;
+}
+
+.emri {
+  font-size: 20px;
+}
+
+.titulli {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.bottomcard5 {
+  margin-left: 300px;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+}
+
+.bottomcard5 i {
+  font-size: 30px;
+  margin-right: 80px;
+}
+
+button {
+  box-shadow: none;
+  background: transparent;
+  border: none;
+}
+
+#btn1 i {
+  position: absolute;
+  right: 80px;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+}
+
+#btn2 i {
+  position: absolute;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  z-index: 3;
+}
+
+#card-1 .card-text-div {
+  position: relative;
+  top: 50px;
+}
+
+#card-2 .card-text-div {
+  position: relative;
+  top: 100px;
+}
+
+#card-2 .card-text-div > .bottom-card-div {
+  position: relative;
+  top: -80px;
+}
+
+#card-3 .card-text-div {
+  position: relative;
+  top: 100px;
+}
+
+#card-3 .card-text-div > .bottom-card-div {
+  position: relative;
+  top: -70px;
+}
+
+#body-div3 {
+  position: absolute;
+  height: 600px;
+  top: 1820px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div3-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.div3-header > h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.div3-content {
+  width: 89%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.div3-content div {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.div3-content > div > img {
+  scale: 0.75;
+}
+
+#body-div4 {
+  position: absolute;
+  top: 2350px;
+  width: 100%;
+  height: 200px;
+  background: var(--colororange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#body-div4 h1 {
+  width: 130%;
+  margin-left: 10%;
+  margin-top: 0px;
+  font-size: 25px;
+}
+
+#body-div4 > .kliko-per-me-shume {
+  margin-bottom: 50px;
+  position: relative;
+  left: 120px;
+}
+
+footer {
+  background: var(--colorblack);
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  top: 2550px;
+  color: var(--colorbackground);
+  display: flex;
+}
+
+footer > #footer-1 {
+  width: 60%;
+  height: 100%;
+
+  padding: 70px;
+}
+
+footer > #footer-1 > h1 {
+  margin-bottom: 40px;
+  border-right: 1px solid var(--colorbackground);
+  padding: 10px;
+  padding-left: 0px;
+}
+
+footer > #footer-1 > a {
+  font-size: 20px;
+  font-weight: 100;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer > #footer-1 > a > i {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+footer > #footer-1 > p {
+  font-weight: 100;
+  margin-right: 20px;
+  margin-top: 70px;
+}
+
+footer > #footer-2 {
+  width: 50%;
+  padding: 70px;
+  height: 100%;
+}
+
+footer > #footer-2 > h1 {
+  margin-bottom: 40px;
+  padding: 10px;
+  padding-left: 0px;
+}
+
+footer > #footer-2 > a {
+  font-size: 20px;
+  font-weight: 100;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer > #footer-2 > a > i {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+footer > #footer-2 > p {
+  font-weight: 100;
+  margin-right: 20px;
+  margin-top: 70px;
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #nav-section {
+    width: 200px;
+  }
+
+  #nav-bar-head {
+    opacity: 0.8;
+    width: 100%;
+    margin-left: 0;
+    height: 110px;
+    position: fixed;
+    top: -40px;
+  }
+  #logo-header {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    left: 35vw;
+  }
+
+  .text-header img {
+    scale: 0.15;
+    position: absolute;
+  }
+
+  #titulli-head1 {
+    top: 25px;
+    left: -580px;
+  }
+
+  #titulli-head2 {
+    top: 50px;
+    left: -355px;
+  }
+
+  .nav-item {
+    display: none;
+    font-size: 10px;
+    margin-right: -30px;
+    position: relative;
+    left: -30px;
+    top: 40px;
+    z-index: 2;
+  }
+
+  #phone-dropdown {
+    position: absolute;
+    width: 100px;
+    height: 105px;
+    top: 120px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    border-radius: 6px;
+  }
+
+  #dropdown-btn {
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+    border: none;
+    font-size: 25px;
+    position: absolute;
+    display: block;
+    top: -10px;
+    left: 10px;
+  }
+
+  #phone-dropdown ul {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 5px;
+  }
+
+  .drop-item {
+    font-size: 10px;
+    font-weight: 200;
+    margin-bottom: 5px;
+  }
+  #lang-btn > .nav-item {
+    display: block;
+  }
+
+  #lang-btn {
+    display: block;
+  }
+
+  #dropdown {
+    position: absolute;
+    display: block;
+    left: -135px;
+    top: 60px;
+  }
+
+  #albania {
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    font-size: 12px;
+  }
+
+  #english {
+    position: absolute;
+    top: 80px;
+    left: 230px;
+    font-size: 12px;
+  }
+
+  .nav-right a {
+    left: -50px;
+  }
+
+  footer {
+    height: 150px;
+    top: 3300px;
+    overflow: hidden;
+    display: flex;
+  }
+
+  footer h1 {
+    font-size: 9px;
+    width: 100%;
+    position: relative;
+    top: -40px;
+    left: 30px;
+  }
+
+  footer > #footer-1 > h1 {
+    width: 185px;
+  }
+
+  footer > #footer-2 > h1 {
+    position: relative;
+    left: 10px;
+  }
+
+  #icon1 {
+    position: relative;
+    left: 60px;
+    top: -70px;
+  }
+
+  #icon2 {
+    position: relative;
+    top: -115px;
+    left: 110px;
+  }
+
+  #icon3 {
+    position: relative;
+    left: 20px;
+    top: -70px;
+  }
+
+  #icon4 {
+    position: relative;
+    top: -115px;
+    left: 80px;
+  }
+
+  footer > #footer-2 > h1 {
+    width: 200px;
+  }
+
+  #copy {
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+    left: 50%;
+    top: -170px;
+    width: 300px;
+  }
+
+  #footer-1 {
+    position: relative;
+    left: -75px;
+    top: -10px;
+    width: 200px;
+  }
+
+  #footer-2 {
+    position: absolute;
+    width: 250px;
+    top: -10px;
+    right: 30px;
+  }
+
+  footer > #footer-1 a {
+    font-size: 14px;
+  }
+
+  footer > #footer-2 a {
+    font-size: 14px;
+  }
+
+  #header {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  #header-main {
+    height: 500px;
+  }
+
+  #header-text {
+    transform: translateY(-50px);
+  }
+
+  #header-text h1 {
+    font-size: 28px;
+    position: relative;
+    top: -20px;
+  }
+
+  #body-div1 {
+    margin-top: -50px;
+  }
+
+  #header-text h2 {
+    position: relative;
+    top: -30px;
+    font-size: 20px;
+  }
+
+  #header-text h3 {
+    position: relative;
+    font-size: 20px;
+    bottom: 30px;
+  }
+
+  #text-div-body1 p {
+    width: 100%;
+  }
+
+  #body-div3 {
+    top: 2400px;
+  }
+
+  #body-div3 > .div3-content {
+    scale: 0.6;
+  }
+
+  #body-div3 > .div3-content {
+    position: relative;
+    transform: translateY(-300px);
+    flex-direction: column;
+  }
+
+  #body-div4 {
+    position: absolute;
+    top: 3150px;
+    z-index: 4;
+    height: 160px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+  }
+
+  #body-div4 h1 {
+    font-size: 14px;
+    width: 90%;
+    transform: translateY(40px);
+    margin: 0 30px;
+  }
+
+  #body-div4 > .kliko-per-me-shume {
+    width: 200px;
+    transform: translate(-60%, 10px);
+  }
+
+  .card {
+    width: 350px;
+    height: 650px;
+    position: absolute;
+    top: 300px;
+    overflow: hidden;
+  }
+
+  #glow {
+    display: none;
+  }
+
+  #card-1 {
+    height: 650px;
+  }
+
+  #card-1 > .pfp-div {
+    width: 250px;
+  }
+
+  #card-2 > .pfp-div {
+    width: 250px;
+  }
+
+  #card-3 > .pfp-div {
+    width: 250px;
+  }
+
+  #card-1 > .pfp-div > .pfp-pic {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 180px;
+    left: 80px;
+  }
+
+  #card-2 > .pfp-div > .pfp-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50% 50% 50% 50%;
+    position: relative;
+    bottom: 210px;
+    left: 80px;
+  }
+
+  #card-3 > .pfp-div > .pfp-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50% 50% 50% 50%;
+    position: relative;
+    bottom: 210px;
+    left: 80px;
+  }
+
+  .card > .card-text-div {
+    top: 250px;
+    width: 300px;
+    height: 350px;
+    font-size: 12px;
+    left: -170px;
+  }
+
+  #card-1 > .card-text-div {
+    top: 260px;
+    width: 300px;
+    font-size: 13px;
+    margin-right: 30px;
+  }
+
+  #card-2 > .card-text-div {
+    top: 260px;
+    width: 300px;
+    font-size: 13px;
+  }
+
+  #card-3 > .card-text-div {
+    top: 260px;
+    width: 300px;
+    font-size: 13px;
+  }
+
+  #card-1 > .card-text-div > .paragraph-div {
+    top: 250px;
+    width: 300px;
+    font-size: 13px;
+    overflow: hidden;
+  }
+
+  .bottom-card-div {
+    top: -150px;
+  }
+
+  #card-2 > .card-text-div > .bottom-card-div {
+    top: 0px;
+  }
+
+  #card-3 > .card-text-div > .bottom-card-div {
+    top: 0px;
+  }
+
+  #card-2 > .card-text-div > .bottom-card-div > .bottomcard5 {
+    position: relative;
+  }
+
+  #card-1 > .card-text-div > .bottom-card-div {
+    top: 0px;
+  }
+
+  #card-1 > .card-text-div > .bottom-card-div > .bottomcard5 {
+    top: 50px;
+    position: relative;
+  }
+
+  .bottomcard5 {
+    position: relative;
+    left: -210px;
+    top: 50px;
+  }
+
+  .bottomcard5 > button > i {
+    margin: -20px;
+  }
+
+  .kliko2 {
+    position: relative;
+    width: 215px;
+    left: 0px;
+  }
+
+  .next-card {
+    display: none;
+  }
+
+  .prev-card {
+    display: none;
+  }
+}

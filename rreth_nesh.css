@@ -1,0 +1,1037 @@
+/*Qitu ja nis kodi qe duhet me copy paste n qdo page*/
+
+:root {
+  --colorbackground: #fffbf1;
+  --colorgray: #c4c6bb;
+  --colororange: #ffb800;
+  --colorblack: #0d0d0d;
+  --colorgreen: #595f39;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  /* border: 2px solid red; */
+}
+
+.hover {
+  position: relative;
+  z-index: 2;
+}
+
+.hover:hover {
+  cursor: pointer;
+  bottom: 2px;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+  background-color: #fffbf1;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  display: inline;
+}
+
+footer a:hover {
+  color: var(--colororange);
+}
+
+a:hover {
+  position: relative;
+  bottom: 2px;
+}
+
+button:hover {
+  position: relative;
+  bottom: 3px;
+  cursor: pointer;
+}
+
+.kliko-per-me-shume a:hover {
+  box-shadow: -5px 5px 5px 1px #0d0d0d78;
+}
+
+#header-opacity {
+  background-image: linear-gradient(to bottom,
+      transparent 30%,
+      var(--colorblack) 50% 100%);
+  opacity: 0.7;
+  width: 100%;
+  height: 583px;
+  position: absolute;
+}
+
+#nav-bar-head {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+  border-radius: 6px;
+  margin: 40px;
+  position: fixed;
+  z-index: 3;
+  width: 90%;
+  height: 83px;
+  margin-left: 5%;
+  display: flex;
+}
+
+#phone-dropdown {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  z-index: 3;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.text-header img {
+  scale: 0.23;
+  position: absolute;
+}
+
+#titulli-head1 {
+  top: -20px;
+  left: -480px;
+}
+
+#titulli-head2 {
+  top: 10px;
+  left: -305px;
+}
+
+#logo-header {
+  width: 95px;
+  height: 80px;
+  margin-left: 20px;
+  margin-top: 0px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#nav-section {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 130px;
+  color: var(--colorbackground);
+}
+
+#nav-section ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 50px;
+}
+
+#nav-section ul li {
+  font-size: 18px;
+  margin: 20px;
+  font-weight: 250;
+  letter-spacing: 0.5px;
+}
+
+#dropdown {
+  position: absolute;
+  display: none;
+}
+
+a {
+  color: var(--colorbackground);
+  text-decoration: none;
+}
+
+/* qitu ja nis footerii*/
+footer {
+  background: var(--colorblack);
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  top: 3500px;
+  color: var(--colorbackground);
+  display: flex;
+  justify-content: center;
+}
+
+footer>#footer-1 {
+  margin-left: 70px;
+  width: 50%;
+  height: 100%;
+  padding: 70px;
+}
+
+footer>#footer-1>h1 {
+  margin-bottom: 40px;
+}
+
+footer>#footer-1>h1::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 70px;
+  left: 50%;
+  top: 60px;
+
+  border-right: 1px solid var(--colorbackground);
+}
+
+footer>#footer-1>a {
+  font-size: 20px;
+  font-weight: 100;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer>#footer-1>a>i {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+footer>#footer-1>p {
+  font-weight: 100;
+  margin-right: 20px;
+  margin-top: 70px;
+}
+
+footer>#footer-2 {
+  width: 50%;
+  padding: 70px;
+  height: 100%;
+}
+
+footer>#footer-2>h1 {
+  margin-bottom: 40px;
+
+  padding-left: 0px;
+}
+
+footer>#footer-2>a {
+  font-size: 20px;
+  font-weight: 100;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer>#footer-2>a>i {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+footer>#footer-2>p {
+  font-weight: 100;
+  margin-right: 20px;
+  margin-top: 70px;
+}
+
+.etapat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffbf1;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.etapa_content {
+  margin: 70px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 1093px;
+  height: 194px;
+}
+
+.etapa_content img {
+  margin-right: 80px;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+}
+
+.image-v1:hover {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.image-v1 {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.image-v1 {
+  position: relative;
+  z-index: 2;
+}
+
+.image-v2 {
+  position: absolute;
+  left: 14%;
+  z-index: 0;
+}
+
+.etapat_content img:hover {
+  opacity: 0;
+}
+
+
+
+.etapat h1 {
+  padding-top: 30px;
+  color: #ffb800;
+  font-style: bold;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  height: 25px;
+}
+
+.etapat p {
+  padding-top: 30px;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+}
+
+#opacity-top {
+  width: 100%;
+  height: 350px;
+  background-image: linear-gradient(to bottom,
+      var(--colorblack) 30%,
+      transparent 100%);
+  opacity: 0.7;
+  position: absolute;
+  top: -50px;
+  z-index: -1;
+}
+
+.head_name>#p1 {
+  top: 30px;
+}
+
+.etapa_head p {
+  position: relative;
+  right: 253px;
+  margin-bottom: -40px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.head_name {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.head_name p {
+  font-size: 18px;
+  height: 150px;
+  letter-spacing: 0px;
+  color: black;
+  padding-top: 5px;
+  margin: 0;
+  white-space: wrap;
+  text-align: justify;
+}
+
+.head_name h1 {
+  padding-top: 20px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  color: black;
+  height: 80px;
+}
+
+.head_name {
+  padding-left: 140px;
+  width: 90%;
+}
+
+.bordi_festivalit {
+  top: 150px;
+
+  position: relative;
+  left: 50px;
+}
+
+.bordi-head {
+  text-align: center;
+}
+
+.bordi-head h1 {
+  font-size: 28px;
+  padding-top: 50px;
+  font-size: 500;
+  letter-spacing: 0px;
+  color: black;
+}
+
+.bordi-head hr {
+  margin-top: 10px;
+  width: 173px;
+  border: 2px solid #ffb800;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bordi_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 29px;
+}
+
+.image {
+  flex: 0 0 auto;
+  width: 359px;
+  height: 357px;
+  margin-left: 100px;
+  position: relative;
+}
+
+.text {
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text p {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 450;
+  width: 759px;
+  height: 279px;
+  letter-spacing: 0px;
+  margin-left: 69px;
+  margin-bottom: 15px;
+}
+
+.text h3 {
+  margin-bottom: 5px;
+  margin-left: 70px;
+}
+
+.text span {
+  display: block;
+  margin-left: 70px;
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 359px;
+  height: 277px;
+  background-color: #ffd700;
+  z-index: -1;
+  margin-left: 30px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.etapa_head hr {
+  position: relative;
+  width: 173px;
+  border: 2px solid #ffb800;
+  font-size: 40px;
+  width: 100px;
+  left: -251px;
+  top: 40px;
+}
+
+
+
+.virtuoso h1 {
+  position: relative;
+  right: 430px;
+  font-size: 28px;
+  padding-top: 50px;
+  font-size: 500;
+  letter-spacing: 0px;
+  color: black;
+}
+
+.virtuoso-h1-eng {
+  padding-left: 30px;
+}
+
+.virtuoso {
+  top: 350px;
+  text-align: center;
+  padding: 5px;
+  position: relative;
+  left: 60px;
+}
+
+.virtuoso-v {
+  position: relative;
+  width: 100px;
+  /* Adjust width to fit with text */
+  height: 100px;
+  right: 10px;
+  bottom: 20px;
+  vertical-align: middle;
+  /* Aligns image vertically with text */
+}
+
+.virtuoso-s {
+  position: relative;
+  right: 60px;
+}
+
+.virtuoso-s-eng {
+  position: relative;
+  left: 35px;
+}
+
+.virtuoso-v-eng {
+
+  position: relative;
+  right: 160px;
+  top: 10px
+}
+
+.organizata-eng {
+  position: relative;
+  right: 50px;
+}
+
+
+.virtuoso hr {
+  position: relative;
+  right: 555px;
+  width: 199px;
+  bottom: 30px;
+  border: 2px solid #ffb800;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.virtuoso .hr-eng,
+.virtuoso .hr-eng hr {
+  border: 2px solid #ffb800;
+  margin-right: 440px;
+  width: 27%;
+  /* Adjust width to be a percentage, so it scales */
+  top: 10px;
+}
+
+
+
+
+
+.virtuoso p {
+  margin-top: 40px;
+  text-align: justify;
+  width: 1199px;
+  margin-left: 100px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.virtuoso::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/Background-picc.png");
+  background-size: cover;
+  z-index: -1;
+  margin-top: 270px;
+}
+
+@media (max-width: 767px) {
+    html {
+    touch-action: none; /* Disable pinch-to-zoom on mobile */
+    user-select: none; /* Prevent text selection */
+    overflow-x: hidden;
+  }
+   body {
+    overflow-x: hidden; 
+  }
+
+  #nav-section {
+    width: 200px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #nav-bar-head {
+    opacity: 0.8;
+    width: 100%;
+    margin-left: 0;
+    height: 110px;
+    position: fixed;
+    top: -40px;
+  }
+
+  #logo-header {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    left: 35vw;
+  }
+
+  .text-header img {
+    scale: 0.15;
+    position: absolute;
+  }
+
+  #titulli-head1 {
+    top: 25px;
+    left: -580px;
+  }
+
+  #titulli-head2 {
+    top: 50px;
+    left: -355px;
+  }
+
+  .nav-item {
+    display: none;
+    font-size: 10px;
+    margin-right: -30px;
+    position: relative;
+    left: -30px;
+    top: 40px;
+    z-index: 2;
+  }
+
+  #phone-dropdown {
+    position: absolute;
+    width: 100px;
+    height: 105px;
+    top: 120px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    border-radius: 6px;
+  }
+
+  #dropdown-btn {
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+    border: none;
+    font-size: 25px;
+    position: absolute;
+    display: block;
+    top: -10px;
+    left: 10px;
+  }
+
+  #phone-dropdown ul {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 5px;
+  }
+
+  .drop-item {
+    font-size: 10px;
+    font-weight: 200;
+    margin-bottom: 5px;
+  }
+
+  #lang-btn>.nav-item {
+    display: block;
+  }
+
+  #lang-btn {
+    display: block;
+  }
+
+  #dropdown {
+    position: absolute;
+    display: block;
+    left: -135px;
+    top: 60px;
+  }
+
+  #albania {
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    font-size: 12px;
+  }
+
+  #english {
+    position: absolute;
+    top: 80px;
+    left: 230px;
+    font-size: 12px;
+  }
+
+  .nav-right a {
+    left: -50px;
+  }
+
+  footer {
+    position: absolute;
+    height: 200px;
+    top: 5700px;
+    padding-top: 10px;
+    overflow: hidden;
+    display: block;
+  }
+
+  .footer-eng {
+    top: 5640px;
+  }
+
+  footer>#footer-1>h1::after {
+    height: 30px;
+    left: 100%;
+    top: -10px;
+  }
+
+  footer h1 {
+    font-size: 9px;
+    width: 100%;
+    position: relative;
+    top: -40px;
+  }
+
+  footer>#footer-1>h1 {
+    width: 185px;
+    left: 20px;
+  }
+
+  footer>#footer-2>h1 {
+    position: relative;
+    left: 0px;
+  }
+
+  #icon1 {
+    position: relative;
+    left: 60px;
+    top: -70px;
+  }
+
+  #icon2 {
+    position: relative;
+    top: -115px;
+    left: 120px;
+  }
+
+  #icon3 {
+    position: relative;
+    left: 20px;
+    top: -70px;
+  }
+
+  #icon4 {
+    position: relative;
+    top: -115px;
+    left: 80px;
+  }
+
+  footer>#footer-2>h1 {
+    width: 200px;
+  }
+
+  #copy {
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+    left: 100%;
+    top: -170px;
+    width: 300px;
+  }
+
+  #footer-1 {
+    position: relative;
+    left: -140px;
+    top: -10px;
+    width: 200px;
+  }
+
+  #footer-2 {
+    position: absolute;
+    width: 250px;
+    top: 0px;
+    right: 30px;
+  }
+
+  footer>#footer-1 a {
+    font-size: 14px;
+  }
+
+  footer>#footer-2 a {
+    font-size: 14px;
+  }
+
+  .section-1-container{
+    width:100vw;
+    display: flex;
+   
+    justify-content: center;
+   
+  }
+
+  .head_name{
+   width:300px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .head_name h1 {
+    position: relative;
+    text-align: center;
+    right: 0px;
+    width: 300px;
+  }
+
+  .head_name p {
+    width: 300px;
+    font-size: 12px;
+  }
+
+  .head_name>#p1 {
+    position: relative;
+    top: 80px;
+  }
+
+ 
+
+  .etapat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .etapa_content {
+    position: relative;
+    width: 400px;
+    margin-bottom: 400px;
+    display: flex;
+    align-items: center;
+    top: -30px;
+  }
+
+  .etapa4 {
+    margin-bottom: -100px;
+  }
+
+  .etapa_content h1 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    left: -150px;
+  }
+
+  .etapat {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .etapat p {
+    margin-bottom: 50px;
+    font-size: 12px;
+    height: 500px;
+    width: 250px;
+    position: relative;
+    left: -150px;
+  }
+
+  .etapa_head p {
+    font-size: 40px;
+    width: 100px;
+    position: relative;
+    left: -20%;
+    top: 0%;
+    font-weight: bold;
+  }
+
+  .etapa-nr {
+    position: relative;
+    top: -420px;
+    left: 33%;
+    margin-top: 50px;
+  }
+
+  .image-v2 {
+    position: absolute;
+    left: 0%;
+    z-index: 0;
+  }
+
+  /*qitu ja nis bordi festivalit*/
+  .head_name {
+    padding-top: 200px;
+  }
+  
+
+  .bordi_festivalit {
+   width:100vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   transform: translateX(-45px)
+  }
+
+  .bordi_content{
+    display: flex;
+    width:300px;
+    flex-direction: column;
+  }
+
+  .bordi_content .image {
+    scale: 0.8;
+    right: 50px;
+  }
+
+  .text{
+    width:300px;
+  }
+  .bordi_content .text p {
+    font-size: 14px;
+    width:300px;
+    margin: 0;
+
+  }
+
+  .bordi_content .text h3 {
+    margin-top: 120px;
+    
+  }
+
+  /*qitu maron*/
+
+
+  .virtuoso-container{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .virtuoso h1 {
+    position: relative;
+    text-align: right;
+    width: 300px;
+  }
+
+  .virtuoso-h1-eng {
+    padding-left: 0px;
+  }
+
+  .virtuoso .hr-eng {
+    width: 300px;
+  }
+
+  .virtuoso .hr-eng hr {
+    position: relative;
+    top: 1500px;
+  }
+
+  .virtuoso p {
+    width: 300px;
+    font-size: 14px;
+    position: relative;
+    
+  }
+
+  .virtuoso {
+    position: relative;
+    width: 300px;
+    left: 0;
+  }
+
+
+  .virtuoso-s-eng {
+    position: relative;
+    left: -4px;
+  }
+
+  .virtuoso-v-eng {
+    position: relative;
+    left: -200px;
+  }
+
+  .organizata-eng {
+    position: relative;
+    left: -40px;
+  }
+
+  .organizata {
+    position: relative;
+    right: 9px;
+  }
+
+  .virtuoso h1 {
+    position: relative;
+    text-align: center;
+    left: 0px;
+    width: 300px;
+  }
+
+  .virtuoso .hr-eng,
+  .virtuoso .hr-eng hr {
+    border: 2px solid #ffb800;
+    margin-right: 175px;
+    width: 45%;
+    /* Adjust width to be a percentage, so it scales */
+    top: -15px;
+  }
+
+  .virtuoso hr {
+    position: relative;
+    right: 0px;
+  }
+  .h1-eng{
+    margin-bottom: 30px;
+  }
+
+
+  .virtuoso p {
+    width: 300px;
+    font-size: 14px;
+    position: relative;
+    right: 5px;
+    margin: 0;
+    padding-bottom: 50px;
+  }
+
+  .virtuoso::before{
+    width:100vw;
+    transform: translate(-10vw);
+  }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
