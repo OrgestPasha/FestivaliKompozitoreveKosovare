@@ -333,7 +333,7 @@ a {
 
 #body-div2 {
   position: relative;
-  top: 1300px;
+  top: 750px;
   width: 100%;
   height: 200px;
   display: flex;
@@ -505,7 +505,7 @@ button {
 #body-div3 {
   position: absolute;
   height: 600px;
-  top: 2120px;
+  top: 2520px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -544,7 +544,7 @@ button {
 
 #body-div4 {
   position: absolute;
-  top: 2650px;
+  top: 3150px;
   width: 100%;
   height: 200px;
   background: var(--colororange);
@@ -571,7 +571,7 @@ footer {
   width: 100%;
   height: 350px;
   position: absolute;
-  top: 2850px;
+  top: 3350px;
   color: var(--colorbackground);
   display: flex;
 }
