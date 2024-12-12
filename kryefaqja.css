@@ -304,9 +304,36 @@ a {
   text-align: justify;
 }
 
+.slider-section {
+  position: relative;
+  height: 1000px;
+  width: 100%;
+  top: 1000px;
+  display: flex;
+  justify-content: center;
+}
+.slider-section-content {
+  width: 65%;
+}
+.slider {
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+  align-items: start;
+  transform: translateX(-25vw);
+  transition: transform 1s ease;
+}
+.slider > img {
+  scale: 0.95;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  transition: transform 1s ease;
+}
+
 #body-div2 {
   position: relative;
-  top: 1000px;
+  top: 1300px;
   width: 100%;
   height: 200px;
   display: flex;
@@ -478,7 +505,7 @@ button {
 #body-div3 {
   position: absolute;
   height: 600px;
-  top: 1820px;
+  top: 2120px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -517,7 +544,7 @@ button {
 
 #body-div4 {
   position: absolute;
-  top: 2350px;
+  top: 2650px;
   width: 100%;
   height: 200px;
   background: var(--colororange);
@@ -544,7 +571,7 @@ footer {
   width: 100%;
   height: 350px;
   position: absolute;
-  top: 2550px;
+  top: 2850px;
   color: var(--colorbackground);
   display: flex;
 }

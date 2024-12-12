@@ -74,3 +74,34 @@ resize();
 
 // Initial call to update the carousel
 updateCarousel();
+
+const slider = document.querySelector(".slider");
+const images = document.querySelectorAll(".slider img");
+
+// Clone first few images to create an infinite scroll effect
+images.forEach((image) => {
+  const clone = image.cloneNode(true);
+  slider.appendChild(clone);
+});
+
+let index = 0;
+const slideInterval = 1000; // 3 seconds
+
+function slide() {
+  index++;
+  const offset = index * -100;
+  slider.style.transform = `translateX(${offset}%)`;
+
+  // Reset to the start when the cloned images finish
+  if (index == images.length - 2) {
+    setTimeout(() => {
+      slider.style.transition = "none";
+      slider.style.transform = "translateX(-25vw)";
+      index = 0;
+    }, 600); // Match the transition time
+  } else {
+    slider.style.transition = "transform 1s ease";
+  }
+}
+
+setInterval(slide, slideInterval);
