@@ -642,6 +642,7 @@ footer > #footer-2 > p {
 
 @media (max-width: 767px) {
   body {
+    max-width: 100vw;
     overflow-x: hidden;
   }
 
@@ -758,7 +759,7 @@ footer > #footer-2 > p {
 
   footer {
     height: 150px;
-    top: 3300px;
+    top: 4000px;
     overflow: hidden;
     display: flex;
   }
@@ -878,8 +879,25 @@ footer > #footer-2 > p {
     width: 100%;
   }
 
+  .slider-section {
+    position: absolute;
+    overflow: hidden;
+    top: 1600px;
+  }
+  .slider-section-content {
+    margin-top: 0;
+  }
+  .slider > img {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  #body-div2 {
+    transform: translateY(300px);
+  }
+
   #body-div3 {
-    top: 2400px;
+    top: 3000px;
   }
 
   #body-div3 > .div3-content {
@@ -894,7 +912,7 @@ footer > #footer-2 > p {
 
   #body-div4 {
     position: absolute;
-    top: 3150px;
+    top: 3850px;
     z-index: 4;
     height: 160px;
     width: 100%;
