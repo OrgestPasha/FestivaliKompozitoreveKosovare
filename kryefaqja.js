@@ -85,7 +85,7 @@ images.forEach((image) => {
 });
 
 let index = 0;
-const slideInterval = 1000; // 3 seconds
+const slideInterval = 3000; // 3 seconds
 
 function slide() {
   index++;
@@ -95,10 +95,10 @@ function slide() {
   // Reset to the start when the cloned images finish
   if (index == images.length - 2) {
     setTimeout(() => {
-      slider.style.transition = "none";
-      slider.style.transform = "translateX(-25vw)";
+      slider.style.transition = "transform 3s";
+      slider.style.transform = "translateX(-20vw)";
       index = 0;
-    }, 600); // Match the transition time
+    }, 3000);
   } else {
     slider.style.transition = "transform 1s ease";
   }
