@@ -324,11 +324,12 @@ a {
   transition: transform 1s ease;
 }
 .slider > img {
+  width: 400px;
   scale: 0.95;
   height: auto;
-  width: auto;
   object-fit: contain;
   transition: transform 1s ease;
+  cursor: pointer;
 }
 
 #body-div2 {

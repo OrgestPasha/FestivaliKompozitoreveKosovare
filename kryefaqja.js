@@ -78,30 +78,74 @@ updateCarousel();
 const slider = document.querySelector(".slider");
 const images = document.querySelectorAll(".slider img");
 
-// Clone first few images to create an infinite scroll effect
-images.forEach((image) => {
-  const clone = image.cloneNode(true);
-  slider.appendChild(clone);
+// Add an index to each image
+images.forEach((image, idx) => {
+  image.dataset.index = idx;
 });
 
-let index = 0;
-const slideInterval = 3000; // 3 seconds
-
-function slide() {
-  index++;
-  const offset = index * -100;
-  slider.style.transform = `translateX(${offset}%)`;
-
-  // Reset to the start when the cloned images finish
-  if (index == images.length - 2) {
-    setTimeout(() => {
-      slider.style.transition = "transform 3s";
-      slider.style.transform = "translateX(-20vw)";
-      index = 0;
-    }, 3000);
-  } else {
-    slider.style.transition = "transform 1s ease";
-  }
+// Clone first and last few images to create an infinite scroll effect
+const clonesBefore = [];
+const clonesAfter = [];
+for (let i = 0; i < 3; i++) {
+  const cloneFirst = images[i].cloneNode(true);
+  const cloneLast = images[images.length - 1 - i].cloneNode(true);
+  cloneFirst.classList.add("clone");
+  cloneLast.classList.add("clone");
+  slider.appendChild(cloneFirst);
+  slider.insertBefore(cloneLast, images[0]);
+  clonesBefore.push(cloneLast);
+  clonesAfter.push(cloneFirst);
 }
 
-setInterval(slide, slideInterval);
+let index = 3; // Start from the first actual image
+const slideInterval = 3000; // 3 seconds
+let intervalId;
+
+function slide(targetIndex = null) {
+  if (targetIndex !== null) {
+    index = targetIndex + 3; // Adjust for the cloned images
+  } else {
+    index++;
+  }
+  const offset = index * -385;
+  slider.style.transition = "transform 1s ease";
+  slider.style.transform = `translateX(${offset}px)`;
+
+  // Handle infinite scroll effect
+  slider.addEventListener("transitionend", handleTransitionEnd);
+}
+
+function handleTransitionEnd() {
+  slider.removeEventListener("transitionend", handleTransitionEnd);
+
+  if (index >= images.length + 3) {
+    index = 3;
+    slider.style.transform = `translateX(-1540px)`; // 3 * -385
+  } else if (index <= 2) {
+    index = images.length + 2;
+    slider.style.transform = `translateX(${index * -385}px)`;
+  }
+
+  // Force reflow to ensure the transition is applied correctly
+  slider.offsetHeight; // Trigger reflow
+  slider.style.transition = "transform 1s ease";
+}
+
+function startSlideShow() {
+  intervalId = setInterval(() => slide(), slideInterval);
+}
+
+function stopSlideShow() {
+  clearInterval(intervalId);
+}
+
+startSlideShow();
+
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    const targetIndex = parseInt(image.dataset.index, 10);
+    slide(targetIndex);
+    stopSlideShow();
+    startSlideShow();
+  });
+});
