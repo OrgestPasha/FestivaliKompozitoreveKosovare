@@ -310,7 +310,8 @@ a {
   width: 100%;
   top: 1000px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .slider-section-content {
   width: 65%;
@@ -331,7 +332,17 @@ a {
   transition: transform 1s ease;
   cursor: pointer;
 }
+.slider-buttons {
+  transform: translateY(500px);
+  width: 100%;
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+}
 
+.slider-buttons button {
+  scale: 3;
+}
 #body-div2 {
   position: relative;
   top: 750px;
@@ -891,6 +902,11 @@ footer > #footer-2 > p {
   .slider > img {
     width: 300px;
     margin-left: 20px;
+  }
+
+  .slider-buttons {
+    transform: translateY(1900px);
+    margin: 0px;
   }
 
   #body-div2 {

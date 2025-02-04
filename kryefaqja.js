@@ -149,3 +149,20 @@ images.forEach((image) => {
     startSlideShow();
   });
 });
+
+function increaseSlider() {
+  slide();
+  stopSlideShow();
+  startSlideShow();
+}
+
+function decreaseSlider() {
+  index--;
+  const offset = index * -385;
+  slider.style.transform = `translateX(${offset}px)`;
+  stopSlideShow();
+  startSlideShow();
+
+  // Handle infinite scroll effect
+  slider.addEventListener("transitionend", handleTransitionEnd);
+}
